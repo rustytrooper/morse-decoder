@@ -54,18 +54,14 @@ function decode(expr) {
      return el.join('')
     })
   console.log(joined);
+
+  let a = joined.map(el=>{
+  if(el.includes(1)) {
+    return Number(el)
+  }
+  return el
+})
   
-    joined.map(el=>{
-      console.log(el);
-          for (let i in el) {
-            // console.log(el[i]);
-            if(el[i]==1){
-              // console.log(el);
-              slicedStr=el.slice(i, el.length)
-              
-            }
-          }
-    })
   
 }
 
